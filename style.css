@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 4.5rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  box-shadow: 0 1px 4px #888888d7;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 9.5rem;
+}
+#header-img {
+  height: 6.2rem;
+  width: auto;
+  margin-bottom: -0.8rem;
+}
+
+
+#letras-logo {
+  font-family: 'Marcellus sc', sans-serif;
+  margin-left: 40rem;
+}
+
+
+#nav-bar  {
+  list-style: none;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.55);
+}
+
+.menu {
+  padding-right: 10rem;
+  margin-left:100px;
+}
+.menu a{
+  text-decoration: none;
+  color: green;
+  font-size: 1.6rem;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.menu > li > a {
+  display: block;
+  margin: 1.5rem 0.5rem;
+}
+
+.menu > li > a:visited {
+  color: green;
+}
+
+.menu > li > a:hover {
+  color: rgba(0, 125, 255, 0.8);
+  transition: all .4s;
+}
+.sub-menu {
+  width: 120%;
+  list-style: none;
+  position: absolute;
+  background-color: rgba(50, 150, 100, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.2s;
+  border-radius: 0px 0px 5px 5px ;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 1.3rem 2rem;
+  color: white;
+}
+
+.sub-menu >li > a:hover {
+  color: rgba(125, 255, 255, 0.801);
+  transition: all 0.5s;
+}
+.menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bg-header {
+  display: block;
+  margin: 0 auto;
+  background-color:black;
+  width: 100%;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto;
+  width: 40% ;
+  height: auto;
+  padding-top:5rem;
+}
+
+.main {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+h2 {
+  font-family: sans-serif ;
+  font-size:2.5rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  color:olive;
+  text-shadow:1px 2px 3px black;
+  padding-top:50px;
+}
+
+h3 {
+  font-family: sans-serif ;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 5rem 2rem;
+  
+}
+
+p {
+  font-size: 2rem;
+  padding: 0.7rem 2rem;
+  
+}
+
+
+
+
+
+.somil h2 {
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.somil p {
+  width: 75%;
+  margin: auto;
+}
+
+.subtitle-des {
+  font-size: 1.7rem;
+  color: #424242;
+}
+
+.description {
+  font-size: 1.7rem;
+  color: #424242;
+}
+
+.somil-videos {
+  padding: 3rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+max-width: 70%;
+  height: 40rem;
+}
+
+
+
+.somil-categorias {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.conte-categorias p {
+  font-size: 1.5rem;
+}
+
+.img-cat {
+  width: 80%;
+}
+
+/* --- Colecciones --- */
+
+.contenedor-colect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.contenedor-colect p {
+  font-size: 1.5rem;
+}
+
+.img-product {
+  width: 80%;
+}
+
+
+.price-container {
+  margin-top: 1.5rem;
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  
+}
+
+.price {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.price span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(16, 187, 53);
+}
+
+.btn-BUY {
+  margin-left: 3rem ;
+  padding: 0.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color:white;
+  border: none;
+  background-color: blue;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+
+#cont-news-about {
+  display: grid;
+  width: 80%;
+  margin: 3rem auto;
+  grid-template-columns: 1fr 1fr;
+  color:blue;
+}
+
+#about {
+  text-align: left;
+  margin: 0rem 0 ;
+}
+
+.p-about {
+  width: 85%;
+  font-size: 1.4rem;
+}
+
+.newsletter {
+  width: 100%;
+}
+
+.newsletter h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  padding: 1rem 0rem 2rem 0em ;
+}
+
+.form {
+  margin-left: 2rem;
+}
+
+#email {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  width: 60%;
+  margin-right: 3.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+#submit {
+  width: 20%;
+  padding: 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(51, 206, 12, 0.9);
+}
+
+
+footer {
+  background-color: #e3e3e3;
+  color: black ;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+}
+
+.footer-container {
+  display: flex;
+  font-size:1.3rem ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+.footer a:hover {
+  color: rgba(152, 2, 0, 0.801);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer  ul  li {
+  display: inline;
+  margin-left: 0.6rem;
+}
+
+@media screen and (max-width: 1437px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align:center;
+    text-shadow:1px 6px 3px black;
+    border-background:red;
+    background-color:red;
+    color:white;
+  }
+
+  header {
+    height: 5rem;
+  }
+  
+} 
+
+@media screen and (max-width: 1257px) {
+  header {
+    height: 6.5rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 
+    "logo letras-logo"
+    "logo menu";
+    padding: 0.6rem;
+  }
+
+  .logo {
+    grid-area: logo;
+    padding-left: 4rem;
+  }
+
+  #letras-logo {
+    padding-right: 15%;
+    margin: 0 auto;
+    text-align: center;
+    grid-area: letras-logo;
+  }
+
+  #nav-bar {
+    padding-right: 14% ;
+    margin: 0 auto;
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu > li > a {
+    margin: 0.5rem 0.5rem;
+  }
+
+  #video {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .main {
+    width: 100%;
+  }
+
+  #form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #email {
+    margin-bottom: 1rem;
+  }
+
+  #submit {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .somil {
+    
+  }
+
+  .somil p {
+    width: 100%;
+  }
+}
+
